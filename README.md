@@ -1,2 +1,2 @@
 # ML
-This is a repository destined to have a very poorly implemented basic machine learning library
+ This is a machine learning library developed by Ethan Meier for CS5350/6350 in University of Utah
