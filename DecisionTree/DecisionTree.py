@@ -1,4 +1,4 @@
-import pandas
+
 import sys
 import math
 import Node
@@ -67,6 +67,7 @@ class DecisionTreeClassifier:
         feature_ids = [x for x in range(len(self.feature_names))]
         # define node variable - instance of the class Node
         self.node = self._id3_recv(x_ids, feature_ids, self.node)
+        
     def _id3_recv(self, x_ids, feature_ids, node):
         if not node:
             node = Node()  # initialize nodes
@@ -103,3 +104,6 @@ class DecisionTreeClassifier:
                 # recursively call the algorithm
                 child.next = self._id3_recv(child_x_ids, feature_ids, child.next)
         return node
+    def find_outcome(self, input):
+        ##take input, read through array, follow key points down to conclusion
+        return 
